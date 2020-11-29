@@ -1,4 +1,10 @@
 <resources>
     <string name="app_name">Desafio WebService</string>
     <string name="imagem_splash_screen">Imagem Splash Screen</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="remember">Remember</string>
+    <string name="log_in">LOG IN</string>
+    <string name="create_account">Create Account</string>
+    <string name="welcome_to_the_marvel_hq_s">Welcome to the Marvel HQ\'S</string>
 </resources>
