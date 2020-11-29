@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Desafio WebService</string>
+    <string name="imagem_splash_screen">Imagem Splash Screen</string>
 </resources>
