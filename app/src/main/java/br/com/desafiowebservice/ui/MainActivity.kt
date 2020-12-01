@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.GridLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import br.com.desafiowebservice.R
 import br.com.desafiowebservice.adapters.AdapterQuadrinho
 import br.com.desafiowebservice.services.repository
@@ -15,7 +16,7 @@ class MainActivity : AppCompatActivity() {
 
     lateinit var adapterQuadrinho: AdapterQuadrinho
     lateinit var gridLayoutManager: GridLayoutManager
-
+    lateinit var rcQuadrinho: RecyclerView
 
     private val viewModel by viewModels<MainViewModel> {
         object : ViewModelProvider.Factory {
@@ -25,23 +26,21 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val rcQuadrinho = mainRcQuadrinho
+        rcQuadrinho = mainRcQuadrinho
         adapterQuadrinho = AdapterQuadrinho()
         gridLayoutManager = GridLayoutManager(this, 3)
         rcQuadrinho.adapter = adapterQuadrinho
         rcQuadrinho.layoutManager = gridLayoutManager
-
-        viewModel.getListaQuadrinhos()
 
         viewModel.listaQuadrinho.observe(this) {
             it.forEach { quadrinho ->
                 adapterQuadrinho.addQuadrinho(quadrinho)
             }
         }
+        viewModel.getListaQuadrinhos()
     }
 }
