@@ -1,8 +1,9 @@
-package br.com.desafiowebservice
+package br.com.desafiowebservice.ui
 
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import br.com.desafiowebservice.R
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.delay

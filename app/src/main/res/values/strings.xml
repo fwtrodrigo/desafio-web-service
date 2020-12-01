@@ -13,5 +13,5 @@
     <string name="capa_filme">Capa Filme</string>
     <string name="logo_marvel">logo marvel</string>
     <string name="quadrinho">Quadrinho</string>
-    <string name="_100">#100</string>
+    <string name="nsa_quadrinho">#%1$d</string>
 </resources>

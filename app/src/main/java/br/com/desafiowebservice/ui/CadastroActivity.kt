@@ -1,8 +1,9 @@
-package br.com.desafiowebservice
+package br.com.desafiowebservice.ui
 
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import br.com.desafiowebservice.R
 import kotlinx.android.synthetic.main.activity_cadastro.*
 
 class CadastroActivity : AppCompatActivity() {
