@@ -8,14 +8,15 @@ import retrofit2.http.Query
 
 interface Repository {
 
-    @GET("characters")
+    @GET("characters/1009610/comics")
     suspend fun getListaQuadrinhos(
         @Query("ts") ts: String,
         @Query("apikey") apikey: String,
         @Query("hash") hash: String,
         @Query("offset") offset: Int,
         @Query("limit") limit: Int,
-    ): JsonObject
+
+        ): JsonObject
 
 }
 

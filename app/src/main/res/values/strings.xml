@@ -14,10 +14,10 @@
     <string name="logo_marvel">logo marvel</string>
     <string name="quadrinho">Quadrinho</string>
     <string name="nsa_quadrinho">#%1$d</string>
+    <string name="texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer massa diam, suscipit non ultricies et, porta eu leo. Mauris lobortis viverra blandit. Donec metus sapien, vehicula vel facilisis nec, facilisis aliquet neque. Donec vitae ligula vel urna elementum tempus sed sed ex. Integer eu arcu lobortis, efficitur arcu nec, fringilla nunc</string>
     <string name="capa_do_quadrinho">CAPA DO QUADRINHO</string>
     <string name="amazing_spider_man_2014_1_mhan_variant">AMAZING SPIDER-MAN (2014) #1 (MHAN VARIANT)</string>
-    <string name="texto">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</string>
-    <string name="published_april_30_2014">Published: April 30, 2014</string>
-    <string name="price_5_99">Price: $ 5,99</string>
-    <string name="pages_38">Pages: 38</string>
+    <string name="publicacao_quadrinho"><b>Published:</b> 1%s</string>
+    <string name="preco_quadrinho"><b>Price:</b> $ 1%s</string>
+    <string name="paginas_quadrinho"><b>Pages:</b> 1%s</string>
 </resources>

@@ -31,7 +31,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         rcQuadrinho = mainRcQuadrinho
-        adapterQuadrinho = AdapterQuadrinho()
+        adapterQuadrinho = AdapterQuadrinho(this)
         gridLayoutManager = GridLayoutManager(this, 3)
         rcQuadrinho.adapter = adapterQuadrinho
         rcQuadrinho.layoutManager = gridLayoutManager

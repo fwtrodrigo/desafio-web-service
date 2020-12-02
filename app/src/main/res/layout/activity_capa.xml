@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue_1"
+    android:orientation="vertical"
+    tools:context=".ui.CapaActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarTelaCapa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:navigationIcon="@drawable/ic_close" />
+
+    <ImageView
+        android:id="@+id/imgCapa"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/shape_quadro"
+        android:contentDescription="@string/quadrinho"
+        android:padding="3dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/splash" />
+
+
+</LinearLayout>

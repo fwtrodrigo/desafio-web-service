@@ -18,10 +18,10 @@ class MainViewModel(private val repository: Repository) : ViewModel() {
             viewModelScope.launch {
                 val response = repository.getListaQuadrinhos(
                     "1",
-                    "6eb7e8896ec5850c52515a8a23ee97f0",
-                    "40a3aa568bb269dfad85ae0c4a297181",
+                    "02d2f6f10a3e8afb2368ab1949529eb2",
+                    "9deccc737e48d9681dac6ab07f678b6d",
                     1,
-                    10
+                    10,
                 )
 
                 val results = response.get("data").asJsonObject.get("results")

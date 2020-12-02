@@ -18,6 +18,14 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarDetalhes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleTextColor="@color/white"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="@drawable/ic_arrow_back" />
+
     <ImageView
         android:id="@+id/ivDetalheQuadrinhoCapa"
         android:layout_width="150dp"
@@ -31,6 +39,7 @@
         android:src="@drawable/splash"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
 
     <TextView
         android:id="@+id/tvDetalheQuadrinhoTitulo"
@@ -74,10 +83,9 @@
         android:layout_marginHorizontal="15dp"
         android:layout_marginTop="20dp"
         android:ellipsize="end"
-        android:text="@string/published_april_30_2014"
+        android:text="@string/publicacao_quadrinho"
         android:textColor="@color/white"
         android:textSize="17sp"
-        android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@id/tvDetalheQuadrinhoPreco"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -91,10 +99,9 @@
         android:layout_marginHorizontal="15dp"
         android:layout_marginTop="5dp"
         android:ellipsize="end"
-        android:text="@string/price_5_99"
+        android:text="@string/preco_quadrinho"
         android:textColor="@color/white"
         android:textSize="17sp"
-        android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/tvDetalheQuadrinhoPaginas"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -109,10 +116,9 @@
         android:layout_marginTop="5dp"
         android:layout_marginBottom="15dp"
         android:ellipsize="end"
-        android:text="@string/pages_38"
+        android:text="@string/paginas_quadrinho"
         android:textColor="@color/white"
         android:textSize="17sp"
-        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
