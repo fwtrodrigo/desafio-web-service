@@ -20,4 +20,5 @@
     <string name="publicacao_quadrinho"><b>Published:</b> 1%s</string>
     <string name="preco_quadrinho"><b>Price:</b> $ 1%s</string>
     <string name="paginas_quadrinho"><b>Pages:</b> 1%s</string>
+    <string name="marvel_logo">Marvel Logo</string>
 </resources>
