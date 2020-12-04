@@ -58,7 +58,7 @@ class MainActivity : AppCompatActivity() {
                     val vItem = gridLayoutManager.findFirstCompletelyVisibleItemPosition()
                     val itens = adapterQuadrinho.itemCount
                     if (litem + vItem >= itens) {
-                        offset += 10
+                        offset += 3
                         viewModel.getListaQuadrinhos(offset)
                     }
                 }
