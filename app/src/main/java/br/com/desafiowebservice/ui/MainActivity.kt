@@ -14,6 +14,8 @@ import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
+    var offset: Int = 1
+
     lateinit var adapterQuadrinho: AdapterQuadrinho
     lateinit var gridLayoutManager: GridLayoutManager
     lateinit var rcQuadrinho: RecyclerView
@@ -41,6 +43,27 @@ class MainActivity : AppCompatActivity() {
                 adapterQuadrinho.addQuadrinho(quadrinho)
             }
         }
-        viewModel.getListaQuadrinhos()
+        viewModel.getListaQuadrinhos(offset)
+
+        setScroller()
     }
+
+
+    private fun setScroller() {
+        rcQuadrinho.addOnScrollListener(object : RecyclerView.OnScrollListener() {
+            override fun onScrolled(recyclerView: RecyclerView, dx: Int, dy: Int) {
+                super.onScrolled(recyclerView, dx, dy)
+                if (dy > 0) {
+                    val litem = gridLayoutManager.itemCount
+                    val vItem = gridLayoutManager.findFirstCompletelyVisibleItemPosition()
+                    val itens = adapterQuadrinho.itemCount
+                    if (litem + vItem >= itens) {
+                        offset += 10
+                        viewModel.getListaQuadrinhos(offset)
+                    }
+                }
+            }
+        })
+    }
+
 }

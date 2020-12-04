@@ -13,14 +13,14 @@ class MainViewModel(private val repository: Repository) : ViewModel() {
 
     val listaQuadrinho = MutableLiveData<ArrayList<Quadrinho>>()
 
-    fun getListaQuadrinhos() {
+    fun getListaQuadrinhos(offset: Int) {
         try {
             viewModelScope.launch {
                 val response = repository.getListaQuadrinhos(
                     "1",
                     "02d2f6f10a3e8afb2368ab1949529eb2",
                     "9deccc737e48d9681dac6ab07f678b6d",
-                    1,
+                    offset,
                     10,
                 )
 
